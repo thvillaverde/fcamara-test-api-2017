@@ -13,7 +13,7 @@ namespace FCamara.Domain.Entities
         public User(string username, string password, string confirmPassword)
         {
             Username = username;
-            Password = EncryptPassword(password);
+            Password = password;
             Active = true;
 
         }

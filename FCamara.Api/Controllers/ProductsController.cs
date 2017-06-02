@@ -23,6 +23,7 @@ namespace FCamara.Api.Controllers
         
         [Route("v1/products")]
         [HttpGet]
+        [Authorize]
         public IEnumerable<Product> Get()
         {
             return _repository.Get();

@@ -27,7 +27,7 @@ namespace FCamara.Api
             {
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(1),
                 Provider = new SimpleAuthorizationServerProvider()
             };
 

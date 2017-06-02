@@ -16,10 +16,10 @@ namespace FCamara.Infra.Migrations
         protected override void Seed(FCamara.Infra.Context.DataContext context)
         {
             //  This method will be called after migrating to the latest version.
-            context.Users.AddOrUpdate(x => x.Id,
+            context.Users.AddOrUpdate(
                 new User("admin", "fcamara", "fcamara"));
 
-            context.Products.AddOrUpdate(x => x.Id,
+            context.Products.AddOrUpdate(
                 new Product("Computador", 3500),
                 new Product("Celular", 800),
                 new Product("Televisão", 1500));
